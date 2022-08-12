@@ -1,6 +1,3 @@
-// <button type="button" data-start>Start</button>
-// <button type="button" data-stop>Stop</button>
-
 const startBtnEl = document.querySelector('[data-start]');
 const stopBtnEl = document.querySelector('[data-stop]');
 const bodyEL = document.querySelector('body');
