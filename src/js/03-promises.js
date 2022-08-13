@@ -15,8 +15,8 @@ function onFormSubmit(evt) {
 
   for (let i = 0; i < amount; i += 1) {
     createPromise(i + 1, delay)
-      .then(resolve => Notify.success(resolve))
-      .catch(reject => Notify.failure(reject));
+      .then(onResolve => Notify.success(onResolve))
+      .catch(onReject => Notify.failure(onReject));
     delay += step;
   }
   evt.currentTarget.reset();
